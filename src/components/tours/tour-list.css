@@ -1,0 +1,125 @@
+.tour-list {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+  width: 28%;
+  margin: 25px 10px;
+  border-radius: 7px;
+  background-color: white;
+  position: relative;
+}
+
+.tour-item:hover {
+    background-color: snow;
+    box-shadow: 0 0 1px 1px gray;
+}
+
+.tour-item-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px 7px 0 0;
+}
+
+.tour-item-label {
+    position: absolute;
+    left: 10px;
+    top: 190px;
+    background-color: rgb(2,2,50);
+    color: white;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 7px;
+}
+
+.tour-item-body {
+    padding: 15px 10px;
+    color: var(--primary-text-color);
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tour-item-title {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.tour-item-duration {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.tour-item-price {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: gray;
+}
+
+.tour-item-price strong {
+    color: red;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.tour-item-link {
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    text-decoration: none;
+}
+
+/* Rating */
+.rating {
+    color: rgb(255, 218, 9);
+}
+
+.rating i {
+    font-size: 21px;
+    margin-right: 4px;
+}
+
+.rating span:first-of-type {
+    font-weight: 500;
+    margin: 0 10px;
+    color: var(--primary-text-color);
+}
+
+.rating span:last-of-type {
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 980px){
+    .tour-item {
+        width: 44%;
+    }
+}
+
+@media (max-width: 720px){
+    .tour-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 520px){
+    .tour-item {
+        width: 100%;
+    }
+}

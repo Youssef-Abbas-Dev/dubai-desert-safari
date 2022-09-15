@@ -1,0 +1,20 @@
+.about {
+    height: calc(100vh - 100px);
+    padding: 40px;
+}
+
+.about h1 {
+    color: #222;
+    margin-bottom: 17px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 7px;
+    width: fit-content;
+    font-size: 40px;
+}
+
+.about p {
+    font-size: 21px;
+    color: rgb(67, 66, 66);
+    margin: 10px 0;
+    font-weight: 500;
+}

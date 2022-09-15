@@ -1,0 +1,40 @@
+.sort-input-container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 30px;
+ margin-top: 21px;
+}
+
+.available-tours {
+    font-size: 21px;
+    color: gray;
+}
+
+.sort-input-container select {
+   border: none;
+   padding: 10px 17px;
+   border-radius: 7px;
+   font-size: 21px;
+   font-weight: 500;
+}
+
+.sort-input-container select:focus{
+    outline: none;
+}
+
+.sort-input-container select option{
+    padding: 10px;
+}
+
+@media (max-width: 520px){
+    .sort-input-container {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .available-tours {
+        margin-top: 15px;
+        padding-left: 5px;
+    }
+}
